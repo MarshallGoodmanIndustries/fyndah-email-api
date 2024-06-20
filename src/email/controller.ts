@@ -5,7 +5,7 @@ import { sendContactEmail } from "../utils/email";
 
 class EmailController {
     public async sendEmail(req: Request, res: Response) {
-        const receiverEmail = "victorkudos@gmail.com";
+        const receiverEmail = "victorkudos@gmail.com"; 
         
         await sendContactEmail(receiverEmail, req);
 
