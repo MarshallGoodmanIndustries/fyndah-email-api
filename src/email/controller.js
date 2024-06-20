@@ -15,7 +15,7 @@ const email_1 = require("../utils/email");
 class EmailController {
     sendEmail(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
-            const receiverEmail = "victorkudos@gmail.com";
+            const receiverEmail = "jasonyang2116@gmail.com";
             yield (0, email_1.sendContactEmail)(receiverEmail, req);
             return res.status(200).json({
                 message: enum_1.MessageResponse.Success,
